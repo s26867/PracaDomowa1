@@ -21,10 +21,31 @@ public class StatekKontenerowy
 
         Kontenery.Add(k);
     }
+    public void ZaladujListeKontenerow(List<Kontener> lista)
+    {
+        foreach (var kontener in lista)
+        {
+            ZaladujKontener(kontener);
+        }
+    }
 
     public void RozladujKontener(string numerSeryjny)
     {
         Kontenery.RemoveAll(k => k.NumerSeryjny == numerSeryjny);
+    }
+    public void ZastapKontener(string numerSeryjny, Kontener nowy)
+    {
+        RozladujKontener(numerSeryjny);
+        ZaladujKontener(nowy);
+    }
+    public void PrzeniesKontenerDo(StatekKontenerowy innyStatek, string numerSeryjny)
+    {
+        Kontener k = Kontenery.Find(k => k.NumerSeryjny == numerSeryjny);
+        if (k != null)
+        {
+            RozladujKontener(numerSeryjny);
+            innyStatek.ZaladujKontener(k);
+        }
     }
 
     public void WyswietlInformacje()
