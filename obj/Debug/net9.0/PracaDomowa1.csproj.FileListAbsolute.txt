@@ -12,3 +12,4 @@ C:\Users\jsitk\RiderProjects\PracaDomowa1\obj\Debug\net9.0\refint\PracaDomowa1.d
 C:\Users\jsitk\RiderProjects\PracaDomowa1\obj\Debug\net9.0\PracaDomowa1.pdb
 C:\Users\jsitk\RiderProjects\PracaDomowa1\obj\Debug\net9.0\PracaDomowa1.genruntimeconfig.cache
 C:\Users\jsitk\RiderProjects\PracaDomowa1\obj\Debug\net9.0\ref\PracaDomowa1.dll
+C:\Users\jsitk\RiderProjects\PracaDomowa1\obj\Debug\net9.0\PracaDomowa1.sourcelink.json

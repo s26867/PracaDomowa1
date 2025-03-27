@@ -1,6 +1,23 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿namespace PracaDomowa1
+{
 
-Console.WriteLine("Hello, World!");
-Console.WriteLine("Hello, World2!");
-Console.WriteLine("Hello, World3!");
-Console.WriteLine("Hello, World4!");
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            StatekKontenerowy statek = new StatekKontenerowy(25, 10, 100000);
+            KontenerNaPlyny kontener1 = new KontenerNaPlyny(250, 500, 300, 10000, true);
+            try
+            {
+                kontener1.ZaladujLadunek(4000);
+                statek.ZaladujKontener(kontener1);
+            }
+            catch (WyjatekPrzeladowania ex)
+            {
+                Console.WriteLine($"Blad: {ex.Message}");
+            }
+
+            statek.WyswietlInformacje();
+        }
+    }
+}
