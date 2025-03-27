@@ -1,6 +1,6 @@
 ﻿namespace PracaDomowa1;
 
-abstract class Konterer
+abstract class Kontener
 {
    private static int licznikNumerow = 1;
    public string NumerSeryjny { get; protected set; } 
